@@ -7,7 +7,7 @@ export const getAllContacts = async () => {
     const contacts = JSON.parse(data);
     return contacts;
   } catch (error) {
-    console.error(`Error writing to file: ${error.message}`);
+    console.error(`Error reading file: ${error.message}`);
   }
 };
 
